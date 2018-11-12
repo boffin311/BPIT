@@ -17,7 +17,7 @@ FrameLayout infoFrame;
      infoFrame=findViewById(R.id.infoFrame);
         FragmentRollNo fragmentRollNo=new FragmentRollNo();
         FragmentTransaction ftrax=getSupportFragmentManager().beginTransaction();
-        ftrax.replace(R.id.infoFrame,fragmentRollNo);
+        ftrax.replace(R.id.infoFrame,fragmentRollNo,"first");
         ftrax.commit();
     }
 }
