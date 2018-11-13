@@ -63,6 +63,7 @@
             android:id="@+id/tvCourse"
             android:textSize="20dp"
             android:hint="Course"
+            android:textColor="#000"
             android:layout_marginStart="5dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -70,6 +71,7 @@
         android:layout_width="match_parent"
         android:layout_marginEnd="30dp"
         android:layout_marginTop="30dp"
+        android:clickable="false"
         android:background="@drawable/modified_edit_text"
 
         android:layout_marginStart="30dp"
@@ -83,6 +85,7 @@
             android:background="#FFF"
             android:id="@+id/tvYear"
             android:hint="Year"
+            android:textColor="#000"
             android:textSize="20dp"
             android:layout_marginStart="5dp"
             android:layout_height="wrap_content" />
@@ -104,7 +107,7 @@
             android:background="#FFF"
             android:hint="Stream"
             android:id="@+id/tvStream"
-
+           android:textColor="#000"
             android:textSize="20dp"
             android:layout_marginStart="5dp"
             android:layout_height="wrap_content" />
@@ -126,6 +129,7 @@
             android:background="#FFF"
             android:id="@+id/tvSection"
             android:textSize="20dp"
+            android:textColor="#000"
             android:hint="Section (optional)"
             android:layout_marginStart="5dp"
             android:layout_height="wrap_content" />

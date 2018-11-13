@@ -3,6 +3,7 @@ package com.example.himanshu.bpit.Fragment;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -16,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.aigestudio.wheelpicker.WheelPicker;
+import com.example.himanshu.bpit.MainActivity;
 import com.example.himanshu.bpit.R;
 
 import java.util.ArrayList;
@@ -24,7 +26,7 @@ import java.util.List;
 public class FragmentOtherInfo extends Fragment {
     public FragmentOtherInfo(){}
 TextView tvYear,tvStream,tvSection,tvCourse;
-
+Button btnLetsGo;
 
    WheelPicker wheelPickerYear;
    View dialogueView;
@@ -36,6 +38,7 @@ TextView tvYear,tvStream,tvSection,tvCourse;
         tvSection=view.findViewById(R.id.tvSection);
         tvStream=view.findViewById(R.id.tvStream);
         tvCourse=view.findViewById(R.id.tvCourse);
+        btnLetsGo=view.findViewById(R.id.btnLetsGo);
         tvYear.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -59,7 +62,7 @@ TextView tvYear,tvStream,tvSection,tvCourse;
            }
        });
 
-tvStream.setOnClickListener(new View.OnClickListener() {
+        tvStream.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         dialogueView=getLayoutInflater().inflate(R.layout.dialogue_pick_year,null);
@@ -79,9 +82,9 @@ tvStream.setOnClickListener(new View.OnClickListener() {
         });
         dialog.show();
 
-    }
+     }
 });
-   tvSection.setOnClickListener(new View.OnClickListener() {
+        tvSection.setOnClickListener(new View.OnClickListener() {
        @Override
        public void onClick(View v) {
            dialogueView=getLayoutInflater().inflate(R.layout.dialogue_pick_year,null);
@@ -124,6 +127,14 @@ tvStream.setOnClickListener(new View.OnClickListener() {
                }
            });
            dialog.show();
+       }
+   });
+   btnLetsGo.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View v) {
+           Intent intent=new Intent(getActivity(), MainActivity.class);
+           intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+           getActivity().getBaseContext().startActivity(intent);
        }
    });
         return view;

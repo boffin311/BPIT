@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Home"
+    android:icon="@drawable/ic_calender"
+    android:id="@+id/menuHome"
+    />
+    <item android:id="@+id/menuTimeTable"
+        android:icon="@drawable/ic_course"
+        android:title="TimeTable"
+        />
+    <item android:title="Attendence"
+        android:id="@+id/menuAttendence"
+        android:icon="@drawable/ic_stream"/>
+</menu>
