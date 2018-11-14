@@ -4,11 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ResultActivity">
-<android.support.v7.widget.RecyclerView
+<LinearLayout
     android:layout_width="match_parent"
-    android:id="@+id/rvSemester"
+    android:orientation="horizontal"
     android:layout_height="wrap_content">
+ <Button
+     android:layout_width="100dp"
+     android:background="@drawable/modified_overall_result"
+     android:textColor="#FFF"
+     android:layout_margin="7dp"
+     android:id="@+id/btnOverall"
+     android:text="Overall"
+     android:layout_height="40dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvSemester"
+        android:layout_height="wrap_content">
 
-</android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/frameResultContainer">
+
+    </FrameLayout>
 </LinearLayout>

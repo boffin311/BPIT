@@ -2,7 +2,7 @@ package com.example.himanshu.bpit.ewai;
 
 import java.util.List;
 
-public class ResultItem{
+public class ResultItem {
 	private String sem;
 	private List<MarksItem> marks;
 

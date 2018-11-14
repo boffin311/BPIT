@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="4"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:id="@+id/tvSubName"
+         android:fontFamily="sans-serif-medium"
+          android:text="Applied Mathematics"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content" />
+    <TextView
+    android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:textColor="#c4000000"
+        android:paddingLeft="10dp"
+        android:text="ETMA-105"
+        android:id="@+id/tvSubCode"
+        android:paddingTop="10dp"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textColor="#FFF"
+            android:id="@+id/tvTotalMarks"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:background="#5c2020b1"
+                android:id="@+id/tvInternal"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <android.support.v4.widget.Space
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="0dp"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:id="@+id/tvExternal"
+                android:background="#5c2020b1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

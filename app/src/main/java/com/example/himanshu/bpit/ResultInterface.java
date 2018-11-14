@@ -6,6 +6,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface ResultInterface {
-    @GET("")
+    @GET("1dpxzu")
     Call<Result> getResult();
 }

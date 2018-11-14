@@ -115,9 +115,7 @@ FrameLayout containerFrame;
             Intent intent=new Intent(MainActivity.this,ResultActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
+        }  else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+<com.github.lzyzsd.circleprogress.ArcProgress
+    android:layout_width="130dp"
+    android:layout_gravity="center"
+    app:arc_unfinished_color="#2a000000"
+    app:arc_text_color="@color/colorPrimary"
+   app:arc_finished_color="@color/colorPrimary"
+    android:id="@+id/arcProgressOverall"
+    app:arc_bottom_text="Overall"
+    android:layout_height="130dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:padding="20dp"
+
+        android:layout_height="match_parent"
+        android:id="@+id/rvParticularSub">
+
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
