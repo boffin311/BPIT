@@ -6,6 +6,6 @@
    android:id="@+id/infoFrame"
 
     android:layout_height="match_parent"
-    tools:context=".InfoActivity">
+    tools:context=".Activities.InfoActivity">
 
 </FrameLayout>

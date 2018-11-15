@@ -1,27 +1,23 @@
 package com.example.himanshu.bpit.Fragment;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.aigestudio.wheelpicker.WheelPicker;
-import com.example.himanshu.bpit.MainActivity;
+import com.example.himanshu.bpit.Activities.MainActivity;
 import com.example.himanshu.bpit.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class FragmentOtherInfo extends Fragment {
     public FragmentOtherInfo(){}

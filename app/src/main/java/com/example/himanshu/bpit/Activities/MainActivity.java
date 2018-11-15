@@ -1,14 +1,10 @@
-package com.example.himanshu.bpit;
+package com.example.himanshu.bpit.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
-import android.view.MotionEvent;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -21,9 +17,12 @@ import android.widget.FrameLayout;
 
 import com.example.himanshu.bpit.Fragment.FragmentOtherInfo;
 import com.example.himanshu.bpit.Fragment.FragmentTimeTable;
+import com.example.himanshu.bpit.R;
+import com.example.himanshu.bpit.ResultActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    public static final String TAG="MAIN";
 FrameLayout containerFrame;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +35,7 @@ FrameLayout containerFrame;
 
 
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottonNavigationView);
+//        disableShiftMode(bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -126,5 +126,30 @@ FrameLayout containerFrame;
         return true;
     }
 
-
+ //@SuppressLint("RestrictedApi")
+// public void disableShiftMode(BottomNavigationView view)
+// {
+//     BottomNavigationMenuView menuView= (BottomNavigationMenuView) view.getChildAt(0);
+//     try {
+//         Field field=menuView.getClass().getDeclaredField("mShiftedMode");
+//         field.setAccessible(true);
+//         try {
+//             field.setBoolean(menuView, false);
+//         } catch (IllegalAccessException e) {
+//             e.printStackTrace();
+//         }
+//         field.setAccessible(false);
+//        if(menuView.getChildCount()<6) {
+//            for (int i = 0; i < menuView.getChildCount(); ++i) {
+//                BottomNavigationItemView itemView = (BottomNavigationItemView) menuView.getChildAt(i);
+//                itemView.setShifting(false);
+//                itemView.setChecked(itemView.getItemData().isChecked());
+//            }
+//        }
+//     } catch (NoSuchFieldException e) {
+//         e.printStackTrace();
+//         Log.d(TAG, "disableShiftMode: ");
+//     }
+//
+// }
 }

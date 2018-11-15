@@ -8,7 +8,11 @@
         android:icon="@drawable/ic_course"
         android:title="TimeTable"
         />
-    <item android:title="Attendence"
+    <item android:title="Attendance"
         android:id="@+id/menuAttendence"
         android:icon="@drawable/ic_stream"/>
+    <item android:title="Chat"
+        android:id="@+id/menuChat"
+        android:icon="@drawable/ic_chat"/>
+
 </menu>

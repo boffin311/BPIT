@@ -1,4 +1,4 @@
-package com.example.himanshu.bpit;
+package com.example.himanshu.bpit.Activities;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -10,6 +10,7 @@ import android.view.Window;
 import android.widget.FrameLayout;
 
 import com.example.himanshu.bpit.Fragment.FragmentRollNo;
+import com.example.himanshu.bpit.R;
 
 public class InfoActivity extends AppCompatActivity {
 FrameLayout infoFrame;
