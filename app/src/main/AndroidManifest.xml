@@ -25,10 +25,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ResultActivity"
+            android:name=".Activities.ResultActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".Activities.ChatBoxActivity"
-            android:theme="@style/Theme.AppCompat.DayNight"></activity>
+            android:windowSoftInputMode="adjustResize"></activity>
     </application>
 
 </manifest>

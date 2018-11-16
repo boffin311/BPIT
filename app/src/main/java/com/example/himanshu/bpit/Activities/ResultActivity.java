@@ -1,18 +1,16 @@
-package com.example.himanshu.bpit;
+package com.example.himanshu.bpit.Activities;
 
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.himanshu.bpit.Adapters.TotalSemesterAdapter;
-import com.example.himanshu.bpit.Fragment.FragmentOverallResult;
+import com.example.himanshu.bpit.R;
+import com.example.himanshu.bpit.ResultInterface;
 import com.example.himanshu.bpit.ewai.Result;
 import com.example.himanshu.bpit.ewai.ResultItem;
 
@@ -23,8 +21,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import static android.widget.Toast.LENGTH_SHORT;
 
 public class ResultActivity extends AppCompatActivity {
 ArrayList<ResultItem> resultItems;

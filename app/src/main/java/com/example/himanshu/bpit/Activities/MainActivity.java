@@ -18,7 +18,6 @@ import android.widget.FrameLayout;
 import com.example.himanshu.bpit.Fragment.FragmentOtherInfo;
 import com.example.himanshu.bpit.Fragment.FragmentTimeTable;
 import com.example.himanshu.bpit.R;
-import com.example.himanshu.bpit.ResultActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -53,6 +52,12 @@ FrameLayout containerFrame;
                         ftraxTT.replace(R.id.containerFrame,fragmentTimeTable);
                         ftraxTT.commit();
                         break;
+
+                    case R.id.menuChat:
+                        Intent intent=new Intent(MainActivity.this,ChatBoxActivity.class);
+                        startActivity(intent);
+                        break;
+
 
                 }
                 return true;
