@@ -1,8 +1,9 @@
 package com.example.himanshu.bpit.Adapters;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,6 @@ import android.widget.TextView;
 
 import com.example.himanshu.bpit.R;
 import com.example.himanshu.bpit.ewai.MarksItem;
-import com.example.himanshu.bpit.ewai.ResultItem;
 
 import java.util.ArrayList;
 

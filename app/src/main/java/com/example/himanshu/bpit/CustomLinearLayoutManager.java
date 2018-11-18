@@ -1,7 +1,9 @@
 package com.example.himanshu.bpit;
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+
 
 public class CustomLinearLayoutManager extends LinearLayoutManager {
     public CustomLinearLayoutManager(Context context) {

@@ -1,12 +1,12 @@
 package com.example.himanshu.bpit.Adapters;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +16,6 @@ import android.widget.Button;
 import com.example.himanshu.bpit.Fragment.FragmentOverallResult;
 import com.example.himanshu.bpit.R;
 import com.example.himanshu.bpit.ewai.MarksItem;
-import com.example.himanshu.bpit.ewai.Result;
 import com.example.himanshu.bpit.ewai.ResultItem;
 
 import java.util.ArrayList;

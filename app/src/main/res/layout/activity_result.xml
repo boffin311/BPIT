@@ -18,12 +18,12 @@
      android:id="@+id/btnOverall"
      android:text="Overall"
      android:layout_height="40dp" />
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:id="@+id/rvSemester"
-        android:layout_height="wrap_content">
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:id="@+id/rvSemester"
+       android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
 
-    </android.support.v7.widget.RecyclerView>
+
 </LinearLayout>
 
     <FrameLayout
