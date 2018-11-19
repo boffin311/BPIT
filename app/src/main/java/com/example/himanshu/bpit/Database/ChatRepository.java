@@ -4,13 +4,14 @@ import android.app.Application;
 import android.os.AsyncTask;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import androidx.lifecycle.LiveData;
 
 public class ChatRepository {
     private ChatDatabase chatDatabase;
     private DaoChatNode daoChatNode;
-    private  LiveData<ArrayList<EntityNode>> liveData;
+    private  LiveData<List<EntityNode>> liveData;
 
   public ChatRepository(Application application)
   {
@@ -30,7 +31,7 @@ new DeleteInBackground(daoChatNode).execute(entityNode);
 new UpdateInBackground(daoChatNode).execute(entityNode);
     }
 
-   public LiveData<ArrayList<EntityNode>> getAllChats()
+   public LiveData<List<EntityNode>> getAllChats()
    {
        return liveData;
    }

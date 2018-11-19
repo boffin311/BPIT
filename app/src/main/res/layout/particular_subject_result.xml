@@ -41,7 +41,7 @@
             android:text="hello"
             android:textColor="#FFF"
             android:id="@+id/tvTotalMarks"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorRound"
             android:textAlignment="center"
             android:textSize="20dp"/>
         <Space

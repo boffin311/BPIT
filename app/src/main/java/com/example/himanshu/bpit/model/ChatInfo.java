@@ -13,6 +13,9 @@ public class ChatInfo {
         this.stream = stream;
     }
 
+    public ChatInfo() {
+    }
+
     public String getPhotoLink() {
         return photoLink;
     }

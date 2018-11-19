@@ -3,6 +3,7 @@ package com.example.himanshu.bpit.Database;
 import android.app.Application;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -10,7 +11,7 @@ import androidx.lifecycle.LiveData;
 
 public class ChatViewModel extends AndroidViewModel {
     private ChatRepository chatRepository;
-    private LiveData<ArrayList<EntityNode>> liveData;
+    private LiveData<List<EntityNode>> liveData;
 
     public ChatViewModel(@NonNull Application application) {
         super(application);
@@ -29,7 +30,7 @@ public class ChatViewModel extends AndroidViewModel {
     {
         chatRepository.update(entityNode);
     }
-    public LiveData<ArrayList<EntityNode>> getAllChats()
+    public LiveData<List<EntityNode>> getAllChats()
     {
         return liveData;
     }

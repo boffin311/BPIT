@@ -21,7 +21,8 @@ import java.util.ArrayList;
 
 public class FragmentOverallResult extends Fragment {
     public FragmentOverallResult(){}
-ArcProgress arcProgressOverall;
+ArcProgress progressAverage,progressCredit;
+
     RecyclerView rvPartcularSub;
     public static final String TAG="FOR";
     ArrayList<MarksItem> marksItems;
@@ -29,9 +30,14 @@ ArcProgress arcProgressOverall;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_show_result,container,false);
-       arcProgressOverall=view.findViewById(R.id.arcProgressOverall);
-       arcProgressOverall.setMax(100);
-       arcProgressOverall.setProgress(84);
+//       progressAverage=view.findViewById(R.id.ProgressAverage);
+//
+//       progressAverage.setMax(100);
+//       progressAverage.setProgress(84);
+//        progressCredit=view.findViewById(R.id.ProgressCredit);
+//
+//        progressCredit.setMax(100);
+//        progressCredit.setProgress(84);
        marksItems= getArguments().getParcelableArrayList("ResultItem");
         Log.d(TAG, "onCreateView: "+marksItems.size());
         rvPartcularSub=view.findViewById(R.id.rvParticularSub);

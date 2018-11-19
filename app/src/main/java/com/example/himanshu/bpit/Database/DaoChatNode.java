@@ -1,6 +1,7 @@
 package com.example.himanshu.bpit.Database;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -21,5 +22,5 @@ public interface DaoChatNode {
     void update(EntityNode node);
 
     @Query( "Select * from chat_node ")
-    LiveData<ArrayList<EntityNode>> getAllChats();
+    LiveData<List<EntityNode>> getAllChats();
 }
